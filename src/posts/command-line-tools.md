@@ -1,7 +1,7 @@
 ---
 path: "/command-line-tools"
 date: "2018-02-26T04:41:53+00:00"
-title: "Making your command line better"
+title: "Make your command line better"
 ---
 
 The following is a list of bash command line tools that might make your life easier. They should all be mac/Linux interoperable. 

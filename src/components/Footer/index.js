@@ -10,9 +10,9 @@ export default () => (
   <Footer>
     <hr />
     <p>
-      Made with ❤️ by{" "}
+      On 🐦 {" "}
       <a href="http://gumad.club/">
-        Gonzaga University's Makers and Developers
+        @Flaqueeau
       </a>
     </p>
   </Footer>

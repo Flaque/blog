@@ -19,8 +19,6 @@ export const pageQuery = graphql`
             title
             date(formatString: "YYYY")
             path
-            author
-            author_link
           }
         }
       }
