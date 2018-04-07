@@ -1,6 +1,9 @@
-# Bits blog
+# Flaque's blog
 
-This is the repo for GUMAD's tech blog. If you're interested in submitting an article, please make a pull request that adds a markdown file to `src/posts`. See [here](http://blog.gumad.club/publishing) for rules and more information.
+This is the repo for my personal blog.
+
+Markdown versions of the posts exist in `src/posts`.
+If you're interested in submitting an article, please make a pull request that adds a markdown file to `src/posts`.
 
 ## Project stack 
 
