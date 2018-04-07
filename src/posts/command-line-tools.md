@@ -10,7 +10,7 @@ The following is a list of bash command line tools that might make your life eas
 
 Autojump is a replacement for `cd` that remembers where you've been in the past and can automagically find the path to something you're looking for.
 
-For example, let's say you want to go to `~/projects/node/blog`, if you've been there before, you can just use `j blog` and it will find it.
+For example, let's say you want to go to `~/projects/node/blog`, if you've been there before, you can use `j blog` and it will find it.
 
 Install it with
 ```
@@ -29,7 +29,7 @@ and then follow the after-install instructions.
 
 ## trash-cli
 
-`rm` is quite dangerous. Unlike `rm`, [trash-cli](https://github.com/sindresorhus/trash-cli) will simply move a file to the trash instead.
+`rm` is quite dangerous. Unlike `rm`, [trash-cli](https://github.com/sindresorhus/trash-cli) will move a file to the trash instead.
 
 If you have node, you can install it with npm:
 
@@ -37,7 +37,7 @@ If you have node, you can install it with npm:
 $ npm install -g trash-cli
 ```
 
-Then, you can use it just like `rm`: 
+Then, you can use it like `rm`: 
 
 ```
 trash mything.png
