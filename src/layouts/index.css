@@ -6,7 +6,7 @@
  */
 
 /*
- main: #1A80C6
+ main: #1289A7
  text: #0A1319
  light-text: #1D2D38
  */
@@ -46,8 +46,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: #1a80c6;
-  border: 0.1rem solid #1a80c6;
+  background-color: #1289A7;
+  border: 0.1rem solid #1289A7;
   border-radius: 0.4rem;
   color: #fff;
   cursor: pointer;
@@ -99,8 +99,8 @@ input[type="reset"][disabled]:focus,
 input[type="reset"][disabled]:hover,
 input[type="submit"][disabled]:focus,
 input[type="submit"][disabled]:hover {
-  background-color: #1a80c6;
-  border-color: #1a80c6;
+  background-color: #1289A7;
+  border-color: #1289A7;
 }
 
 .button.button-outline,
@@ -109,7 +109,7 @@ input[type="button"].button-outline,
 input[type="reset"].button-outline,
 input[type="submit"].button-outline {
   background-color: transparent;
-  color: #1a80c6;
+  color: #1289A7;
 }
 
 .button.button-outline:focus,
@@ -138,7 +138,7 @@ input[type="reset"].button-outline[disabled]:hover,
 input[type="submit"].button-outline[disabled]:focus,
 input[type="submit"].button-outline[disabled]:hover {
   border-color: inherit;
-  color: #1a80c6;
+  color: #1289A7;
 }
 
 .button.button-clear,
@@ -148,7 +148,7 @@ input[type="reset"].button-clear,
 input[type="submit"].button-clear {
   background-color: transparent;
   border-color: transparent;
-  color: #1a80c6;
+  color: #1289A7;
 }
 
 .button.button-clear:focus,
@@ -176,7 +176,7 @@ input[type="reset"].button-clear[disabled]:focus,
 input[type="reset"].button-clear[disabled]:hover,
 input[type="submit"].button-clear[disabled]:focus,
 input[type="submit"].button-clear[disabled]:hover {
-  color: #1a80c6;
+  color: #1289A7;
 }
 
 code {
@@ -188,7 +188,7 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #1a80c6;
+  border-left: 0.3rem solid #1289A7;
   overflow-y: hidden;
 }
 
@@ -236,7 +236,7 @@ input[type="text"]:focus,
 input[type="url"]:focus,
 textarea:focus,
 select:focus {
-  border-color: #1a80c6;
+  border-color: #1289A7;
   outline: 0;
 }
 
@@ -247,7 +247,7 @@ select {
 }
 
 select:focus {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#1A80C6" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#1289A7" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
 }
 
 textarea {
@@ -454,7 +454,7 @@ input[type="radio"] {
 }
 
 a {
-  color: #1a80c6;
+  color: #1289A7;
   text-decoration: none;
   font-weight: 600;
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
-import { NewFilePath } from "../Github";
 
 const Bar = styled.div`
   margin: 0 auto;
@@ -25,7 +24,7 @@ const HeaderAccentBar = styled.div`
   top: 0px;
   left: 0px;
   width: 100%;
-  background: #1a80c6;
+  background: #1289A7;
   height: 10px;
 `;
 
@@ -57,17 +56,14 @@ const Header = ({ title }) => (
         </Link>
       </HeaderLogo>
       <Nav>
+        
         <ShiftedLink>
-          <a href="https://github.com/gu-app-club/blog">github</a>
+          <a href="https://github.com/flaque/blog">github</a>
         </ShiftedLink>
 
         <ShiftedLink>
           <Link to="/about">/about </Link>
         </ShiftedLink>
-
-        <ShiftedLink>
-          <a href={NewFilePath()}>/new</a>
-          </ShiftedLink>
       </Nav>
     </Bar>
   </div>

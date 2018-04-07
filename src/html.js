@@ -43,7 +43,7 @@ class Html extends Component {
           />
 
           {css}
-          <title>Bits, tech topics in 150 words or fewer. </title>
+          <title>Evan Conrad's blog (Flaque) </title>
         </head>
         <body>
           <div

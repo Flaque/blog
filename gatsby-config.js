@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: ".Bits"
+    title: "Flaque"
   },
   plugins: [
     "gatsby-plugin-catch-links",
