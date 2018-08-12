@@ -1,22 +1,15 @@
-import React, { Component } from "react";
-import * as PropTypes from "prop-types";
+import React from "react";
 
 let stylesStr;
 if (process.env.NODE_ENV === `production`) {
   try {
     stylesStr = require(`!raw-loader!../public/styles.css`);
   } catch (e) {
-    console.error(e);
+    console.log(e);
   }
 }
 
-const propTypes = {
-  headComponents: PropTypes.node.isRequired,
-  body: PropTypes.node.isRequired,
-  postBodyComponents: PropTypes.node.isRequired
-};
-
-class Html extends Component {
+module.exports = class HTML extends React.Component {
   render() {
     let css;
     if (process.env.NODE_ENV === `production`) {
@@ -27,26 +20,26 @@ class Html extends Component {
         />
       );
     }
-
     return (
-      <html op="news" lang="en">
+      <html {...this.props.htmlAttributes}>
         <head>
-          {this.props.headComponents}
-
-          <meta name="referrer" content="origin" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Merriweather:400,900"
+            rel="stylesheet"
+          />
           <meta charSet="utf-8" />
-          <meta name="description" content="Bits: a tech blog in 150 words or fewer." />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-
+          {this.props.headComponents}
           {css}
-          <title>Evan Conrad's blog (Flaque) </title>
         </head>
-        <body>
+        <body {...this.props.bodyAttributes}>
+          {this.props.preBodyComponents}
           <div
+            key={`body`}
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
@@ -55,8 +48,4 @@ class Html extends Component {
       </html>
     );
   }
-}
-
-Html.propTypes = propTypes;
-
-module.exports = Html;
+};

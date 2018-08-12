@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Bits from GUMAD",
+  "name": "evans-blog",
+  "description": "Evans blog",
   "version": "1.0.0",
-  "author": "Evan Conrad <gumad.club@gmail.com>",
+  "author": "Evan Conrad <econrad+blog@zagmail.gonzaga.com>",
   "dependencies": {
     "gatsby": "^1.9.221",
     "gatsby-link": "^1.6.37",
@@ -18,16 +18,15 @@
     "query-string": "^5.1.0",
     "styled-components": "^3.1.6"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "dev": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

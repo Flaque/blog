@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CreditsTag from "../components/CreditsTag";
-import { AskQuestion, SomethingWrong } from "../components/Github";
+import Link from "gatsby-link";
 
 const Head = styled.h1`
   font-weight: 300;
@@ -12,7 +11,6 @@ export default function Template({ data }) {
   return (
     <div>
       <Head>{post.frontmatter.title}</Head>
-      <CreditsTag post={post} />
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: post.html }}
@@ -20,8 +18,7 @@ export default function Template({ data }) {
 
       <hr />
 
-      <SomethingWrong path={post.fileAbsolutePath} />
-      <AskQuestion title={post.frontmatter.title} />
+      <Link to="/">Back</Link>
     </div>
   );
 }

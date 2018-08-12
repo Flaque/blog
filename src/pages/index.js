@@ -1,9 +1,31 @@
 import React from "react";
-import Feed from "../components/Feed";
-import queryString from "query-string";
+import styled from "styled-components";
+
+const StyledMenu = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`;
+
+const Link = ({ node }) => (
+  <li>
+    <a href={node.frontmatter.path}>{node.frontmatter.title}</a>
+  </li>
+);
+
+const Feed = ({ data }) => (
+  <main>
+    <StyledMenu>{data.allMarkdownRemark.edges.map(Link)}</StyledMenu>
+  </main>
+);
 
 const IndexPage = props => {
-  return <Feed data={props.data} />;
+  return (
+    <div>
+      <h1>{props.data.site.siteMetadata.title}</h1>
+      <Feed data={props.data} />
+    </div>
+  );
 };
 
 export default IndexPage;
@@ -21,6 +43,11 @@ export const pageQuery = graphql`
             path
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
