@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
+import { SomethingWrong, AskQuestion } from "../components/github";
 
 const Head = styled.h1`
   font-weight: 300;
 `;
+
+function markdownPath(path) {
+  return "/src/posts" + path + ".md";
+}
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -18,6 +23,8 @@ export default function Template({ data }) {
 
       <hr />
 
+      <AskQuestion title={post.frontmatter.title} />
+      <SomethingWrong path={markdownPath(post.frontmatter.path)} />
       <Link to="/">Back</Link>
     </div>
   );
