@@ -32,8 +32,8 @@ function queryForPosts(graphql) {
   `);
 }
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
   const blogPostTemplate = path.resolve(`src/templates/post.js`);
 
   return queryForPosts(graphql).then(result => {
