@@ -1,0 +1,181 @@
+html,
+body {
+  background: white;
+  transition: background 0.25s;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #16103c;
+  font-family: -apple-system, IBM Plex Sans, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 24px 0;
+  display: flex;
+}
+
+a {
+  color: #16103c;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, IBM Plex Sans, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  line-height: 24px;
+}
+
+pre,
+code {
+  font-family: Source Code Pro, mono;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #16103c;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+label {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+html,
+.root {
+  font-size: 18px;
+  line-height: 23px;
+}
+body,
+.article {
+  font-size: 1em;
+  line-height: 1.27777778em;
+}
+h1,
+.h1 {
+  font-size: 2.38888889em;
+  line-height: 1.06976744em;
+  margin-top: 0.53488372em;
+  margin-bottom: 0.71875em;
+  /* border-bottom: 1px solid #434158;
+padding-bottom: 0.26744186em; */
+}
+h2,
+.h2 {
+  font-size: 1.77777778em;
+  line-height: 1.4375em;
+  margin-top: 0.71875em;
+  margin-bottom: 0.71875em;
+  border-bottom: 1px solid #434158;
+  padding-bottom: 0.26744186em;
+}
+h3,
+.h3 {
+  font-size: 1.33333333em;
+  line-height: 1.91666667em;
+  margin-top: 0.95833333em;
+  margin-bottom: 0em;
+}
+h4,
+.h4 {
+  font-size: 1em;
+  line-height: 1.27777778em;
+  margin-top: 1.27777778em;
+  margin-bottom: 0em;
+}
+h5,
+.h5 {
+  font-size: 1em;
+  line-height: 1.27777778em;
+  margin-top: 1.27777778em;
+  margin-bottom: 0em;
+}
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.27777778em;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr,
+.hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
